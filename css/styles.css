@@ -27,6 +27,8 @@ p{
 }
 .search-box{
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 .business{
   width: 400px;
@@ -35,7 +37,7 @@ p{
   padding: 10px;
   border-radius: 25px;
   outline: None;
-  margin-left: 250px;
+  /*margin-left: 250px;*/
   background: #DAD5AB;
 }
 .location{
@@ -55,6 +57,7 @@ p{
   border: None;
   color: #000;
   border-radius: 25px;
+  margin-left: 10px;
 }
 .btn:hover{
   background: #ffc107;
@@ -102,9 +105,8 @@ p{
   color: #ffffff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
-  margin-left: 560px;
+  margin-left: 500px;
   text-decoration: none;
-
 }
 
 .demo:hover {
