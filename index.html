@@ -4,47 +4,175 @@
 <head>
   <meta charset="utf-8">
   <title>lessive</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- CSS Sheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles-test.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+  <!-- Icons -->
   <link rel="icon" type="image/png" href="images/L.PNG">
 </head>
-
 <body>
-  <div class="top-container">
-    <h1 class="logo">LESSIVE</h1>
-    <a class="heading" href="#">LOGIN</a>
-    <a class="heading" href="#">PRICING</a>
-    <a class="heading" href="#">LAUNDRY SERVICES</a>
-    <a class="heading" href="#">ORDERING</a>
-  </div>
-  <div class="middle-container">
-    <h1 class="search">Find A Laundry Store Near You!</h1>
-    <form class="search-box" action="index.html" method="post">
-      <input type="text" class="business" placeholder="Laundry Store..">
-      <input type="text" class="location" placeholder="Location">
-      <button type="button" class="btn" name="button">Search</button>
-    </form>
-    <br>
-    <br>
-    <a class="demo" href="https://app.animaker.com/video/D8RG7QB6ZBR0CHM4"><img src="images/play.PNG" alt="play-button" width="20px" height="20px">How it works!</a>
-    <div class="middle-text">
-      <img class="machine-image "src="images/middle.png" alt="Washing machine image" height="160px" width="30%">
-      <h3>GET YOUR CLOTHES WASHED</h3>
-      <p>Our online ordering system will help you to get your clothes washed and ironed and it will be delivered to your door step.</p>
-      <p>No matter how busy you are, you will always be able to spend your time with your loved ones.Don't think about clothes at all that's why we are here to serve you.</p>
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="#">lessive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Laundry Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Ordering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Get the Laundry services nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"> <i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"> <i class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/wash.png" alt="washing_machine-mopup">
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="bottom-container">
-    <ul>
-      <li>
-        <a class="links" href="images/contacts">Contact</a>
-      </li>
-      <li>
-        <a class="links" href="images/contacts">About us</a>
-      </li>
-      <li>
-        <a class="links" href="images/contacts">Blog</a>
-      </li>
-    </ul>
-  </div>
+  </section>
+  <!-- Features -->
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3>Cost Effective</h3>
+          <p>Providing best services for a resonable price so that everyone can afford it.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+         <h3>Premium Services</h3>
+         <p>We have all the services available including washing,drying & ironing of clothes.</p>
+
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3>On Time Delivery</h3>
+        <p>Get you clothes delivered on time so that you don't have to miss any event.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false" data-bs-keyboard="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>It was a hard job to wash the clothes and iron them daily as a working professional. Now I don't have to worry as I found best Laundry services on Lessive. Thank you Lessive for the best services.</h2>
+          <img class="testimonial-image" src="images/boy.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">I no longer have to wash my clothes again. I've found the best laundry services on Lessive.I can spend my weekend time now with my family.</h2>
+          <img class="testimonial-image" src="images/girl-1.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- Press -->
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+  </section>
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>A Laundry Plan for Everyone's Needs</h2>
+    <p>Simple and affordable price plans for you and your family.</p>
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Basic</h3>
+          </div>
+          <div class="card-body">
+            <h2>Rs. 1500 / mo</h2>
+            <p>2 clothes Per Day</p>
+            <p>Only washing & drying</p>
+            <p>Delivery withing 12 hrs during day</p>
+            <button class="btn btn-lg btn-outline-dark col-12" type="button">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Medium</h3>
+          </div>
+          <div class="card-body">
+            <h2>Rs. 2500 / mo</h2>
+            <p>5 clothes Per Day</p>
+            <p>Washing, drying & Ironing</p>
+            <p>Delivery withing 6 hrs during day</p>
+            <button class="btn btn-lg btn-dark col-12" type="button">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Advanced</h3>
+          </div>
+          <div class="card-body">
+            <h2>Rs. 5000 / mo</h2>
+            <p>8 clothes Per Day</p>
+            <p>Washing, drying & Ironing</p>
+            <p>Quick delivery withing 2 hrs anytime</p>
+            <button class="btn btn-lg btn-dark col-12" type="button">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <section id="cta">
+    <h3>Find the True Love with your neatly washed & ironed clothes.</h3>
+    <button type="button">Download</button>
+    <button type="button">Download</button>
+  </section>
+  <!-- Footer -->
+  <footer id="footer">
+    <p>© Copyright 2021 Lessive.in</p>
+  </footer>
 </body>
 </html>
