@@ -10,7 +10,7 @@
 
   <!-- CSS Sheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-test.css">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
@@ -26,29 +26,29 @@
   <section id="title">
     <div class="container-fluid">
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">lessive</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Laundry Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Ordering</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-        <a class="navbar-brand" href="#">lessive</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="">Laundry Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Ordering</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6">
@@ -94,7 +94,7 @@
         </div>
         <div class="carousel-item">
           <h2 class="testimonial-text">I no longer have to wash my clothes again. I've found the best laundry services on Lessive.I can spend my weekend time now with my family.</h2>
-          <img class="testimonial-image" src="images/girl-1.JPG" alt="lady-profile">
+          <img class="testimonial-image" src="images/girl-1.jpg" alt="lady-profile">
           <em>Beverly, Illinois</em>
         </div>
       </div>
@@ -110,7 +110,7 @@
   </section>
   <!-- Press -->
   <section id="press">
-    <img class="press-logo" src="images/TechCrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
     <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
     <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
     <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
@@ -166,13 +166,20 @@
   </section>
   <!-- Call to Action -->
   <section id="cta">
-    <h3>Find the True Love with your neatly washed & ironed clothes.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <div class="container-fluid bottom">
+      <h3 class="cta-heading">Find the True Love with your neatly dressed and ironed clothes.</h3>
+      <button type="button" class="btn btn-dark btn-lg download-button"> <i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button"> <i class="fab fa-google-play"></i> Download</button>
+
+    </div>
   </section>
   <!-- Footer -->
   <footer id="footer">
-    <p>© Copyright 2021 Lessive.in</p>
+    <i class="social-media fab fa-twitter"></i>
+    <i class="social-media fab fa-facebook-f"></i>
+    <i class="social-media fab fa-instagram"></i>
+    <i class="social-media fas fa-envelope"></i>
+    <p>© Copyright 2021 Lessive</p>
   </footer>
 </body>
 </html>
