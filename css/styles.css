@@ -105,6 +105,12 @@ p{
 .pricing-column{
   padding: 3% 2%;
 }
+/* Call to Action Section */
+#cta {
+  text-align: center;
+  padding: 100px;
+}
+/* Footer Section */
 #footer {
   text-align: center;
   padding: 100px;
